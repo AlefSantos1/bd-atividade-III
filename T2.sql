@@ -9,7 +9,7 @@ CREATE TRIGGER AumentarPrecoProduto
 BEFORE UPDATE ON Produtos
 FOR EACH ROW
 BEGIN
-    SET NEW.Preco = NEW.Preco * 1.10; -- Preço aumentou em 10%
+    SET NEW.Preco = NEW.Preco * 1.10;
 END;
 //
 DELIMITER ;
